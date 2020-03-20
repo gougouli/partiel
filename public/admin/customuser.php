@@ -29,7 +29,7 @@ if($_POST){
     }
 }
 //============================== MODIFICATION D'UTILISATEUR ==============================
-$userinfo = getInfo($id); // on recupere les information pour eviter de recharger la page: pour comprendre retirer la ligne puis modifier un utlisateur
+$userinfo = getInfo($id); // MACHE PASon recupere les information pour eviter de recharger la page: pour comprendre retirer la ligne puis modifier un utlisateur
 
 require_once "../layout/header.php";
 ?>
