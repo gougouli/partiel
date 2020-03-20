@@ -1,13 +1,13 @@
 <?php
 // ==================== NEWSLETTER FORM ====================
 require_once __DIR__."/../../functions/db.php";
-if(!empty($_POST['email'])){
+if(!empty($_POST['email2'])){
     $db= dbConnect();
     $stmt = $db->prepare("SELECT * FROM newsletter WHERE email = ?" );
-    $stmt->execute([$_POST['email']]);
+    $stmt->execute([$_POST['email2']]);
     if($stmt->rowCount() == 0){
         $stmt = $db->prepare("INSERT INTO newsletter (email) VALUE (?)");
-        $stmt->execute([$_POST['email']]);
+        $stmt->execute([$_POST['email2']]);
         $_SESSION['success'] = "Vous vous etes inscris à notre newsletter ! Merci";
     }else{
         $_SESSION['errors'] = "Vous etes déjà inscris à notre newsletter !";

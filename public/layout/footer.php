@@ -10,7 +10,7 @@
         <?php if(!strpos($_SERVER['REQUEST_URI'], "admin")){ ?><!--   Permet de savoir si le mot "admin" est dans l'url et donc de ne pas afficher la newletter sur les pages admin -->
             <h6>Inscrivez-vous à la NewsLetter</h6>
             <form action="" method="post">
-                <input type="email" name="email" class="w-25 p-2" placeholder="example@example.com">
+                <input type="email" name="email2" class="w-25 p-2" placeholder="example@example.com">
                 <input class="btn btn-success" type="submit" value="S'inscrire">
             </form>
 
